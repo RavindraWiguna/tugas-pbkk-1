@@ -28,7 +28,7 @@ class ProductController extends Controller
             'originCountry' => 'required|alpha',
             'price' => 'required|numeric|between:2.50,99.99',
             'gambar' => 'required|mimes:jpg,jpeg,png|between:0.001,2000.0',
-            'stock' => 'required|number'
+            'stock' => 'required|numeric'
          ]);
         //save the gambar
         // $path = $request->gambar->storeAs('images', 'filename' . $request->productName . '.jpg');
